@@ -9,7 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 <script src="https://kit.fontawesome.com/b28ca164da.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <!------------header --------------->
@@ -26,7 +25,7 @@
 	<i class="fa fa-times" onclick="hideMenu()"></i>
 		
 	<ul>
-		<li class="hover-line"><a href="#">Home</a></li>
+		<li class="hover-line"><a href="index.html">Home</a></li>
 		<li class="hover-line"><a href="#">About</a>
 		  <ul>
 			<li><a href="history.html">History</a></li>
@@ -51,7 +50,7 @@
 		<li class="hover-line"><a href="#">Events</a>
 		<ul>
 		  <li><a href="activities.html">Activities</a></li>
-		  <li><a href="training.html">Training</a></li>
+		  <li><a href="#">Training</a></li>
 		  <li><a href="sharmdhan.html">Sharmdhan</a></li>
 		  <li><a href="socialservice.html">Social-Service</a></li>
 		</ul>
@@ -90,7 +89,6 @@
 
 
 </header>
-
 <!--- Events ------>
 <section class="events">
 <h1>Events of the BHQ</h1>
@@ -123,106 +121,10 @@
 	</div>
 </section>
 
-<!--- Infrastracture ------>
-<section class="infrastructure">
-	<h1>Infrastracture</h1>
-	<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-
-	<div class="row">
-		<div class="infr-col">
-			<img src="img/barrack.png" alt="">
-				<div class="layer">
-					<h3>BARRACK</h3>
-				</div>
-		</div>
-		<div class="infr-col">
-			<img src="img/office.png" alt="">
-				<div class="layer">
-					<h3>OFFICE</h3>
-				</div>
-		</div>
-		<div class="infr-col">
-			<img src="img/other.png" alt="">
-				<div class="layer">
-					<h3>OTHER BUILDINGS</h3>
-				</div>
-		</div>
-	</div>
-</secton>
-
-<!--- Facilities ------>
-<section class="fascilities">
-	<h1>Facilities</h1>
-	<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-
-		<div class="row">
-			<div class="facilities-col">
-				<img src="img/library.png" alt="">
-				<h3>Mess</h3>
-				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-			</div>
-			<div class="facilities-col">
-				<img src="img/basketball.png" alt="">
-				<h3>Playground</h3>
-				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-			</div>
-			<div class="facilities-col">
-				<img src="img/cafeteria.png" alt="">
-				<h3>Canteen</h3>
-				<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-			</div>
-
-		</div>
-
-</section>
-
-<!--- Testimonials ------>
-<section class="testimonials">
-	<h1>Testimonials</h1>
-	<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-
-		<div class="row">
-
-			<div class="testimonials-col">
-				<img src="img/user1.jpg">
-				<div>
-					<P>Arunachal Pradesh Police takes immense pleasure in welcoming you to the website of Arunachal Pradesh Police.
-					Arunachal Pradesh with its mesmerizing scenic beauty, is unique and.</P>
-					<h3>Shri Bamang Felix, Hon’ble Home Minister</h3>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-			</div>
-			<div class="testimonials-col">
-				<img src="img/user2.jpg">
-				<div>
-					<P>Arunachal Pradesh Police takes immense pleasure in welcoming you to the website of Arunachal Pradesh Police.
-					Arunachal Pradesh with its mesmerizing scenic beauty, is unique and.</P>
-					<h3>(Shri R. P. Upadhyaya)IPS, Director General of Police</h3>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-half-alt"></i>
-				</div>
-			</div>
-
-		</div>
-</section>
-
-<!--- Call to action ------>
-<section class="cta">
-	<h1>Register!<br> For Our Latest Update</h1>
-	<a href=""class="hero-btn">CONTACT US</a>
-
-</section
 
 <!--- footer ------>
 <section class="footer">
-	<h4>About Us</h4>
+	<h4>Events</h4>
 	<P>Arunachal Pradesh Police takes immense pleasure in welcoming you to the website of<br> Arunachal Pradesh Police.
 	Arunachal Pradesh with its mesmerizing scenic beauty, is unique and.</P>
 	<div class="icons">
@@ -244,37 +146,6 @@
 	function hideMenu(){
 		navLink.style.right="-200px";
 	}
-</script>
-
-
-<!--- JavaScript for Image slider ------>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
 </script>
 
 </body>

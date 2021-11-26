@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<title>4TH IRBN</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/b28ca164da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-link" id="navLink">
+		<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="notice.html">Notice</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallary.html">Gallary</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Contact Us</h1>
+</section>
+
+<!--- Contact us ------>
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.7447272837194!2d93.63228871452449!3d27.088882659006075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374407f9a5e9e445%3A0xcad8a8f5f5b32a24!2s4th%20IRBn%20Headquarter%20Jully%20Itanaghar!5e1!3m2!1sen!2sin!4v1637084634300!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>Office Of The Commandant, 4<sup>th</sup> IRBn BHQ Jully, </h5>
+					<p>Itanagar, Arunachal Pradesh, India</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<span>
+					<h5>0360-0000000 </h5>
+					<p>Monday to Saturday, 10AM to 4PM</p>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>co4thirbn@gmail.com</h5>
+					<p>Email us your query</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+			<form action="form-handler.php" method="POST">
+				<input type="text" name="name" placeholder="Enter your name" required>
+				<input type="email" name="email" placeholder="Enter your email id" required>
+				<input type="text" name="subject" placeholder="Enter your subject" required>
+				<textarea rows="8" name="message" placeholder="Message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Message</button>
+			</form>
+
+		</div>
+	</div>
+</section>
+<!--- footer ------>
+<section class="footer">
+	<h4>Contact Us</h4>
+	<P>Arunachal Pradesh Police takes immense pleasure in welcoming you to the website of<br> Arunachal Pradesh Police.
+	Arunachal Pradesh with its mesmerizing scenic beauty, is unique and.</P>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Xrmsoft </p>
+</section
+
+<!--- JavaScript for toggle Menu ------>
+<script>
+	var navLink = document.getElementById("navLink");
+	function showMenu(){
+		navLink.style.right="0";
+	}
+
+	function hideMenu(){
+		navLink.style.right="-200px";
+	}
+</script>
+
+</body>
+</html>
